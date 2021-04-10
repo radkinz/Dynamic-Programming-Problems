@@ -28,7 +28,6 @@ min (int a, int b, int c)
   return result;
 }
 
-/* function returning the max between two numbers */
 char *
 EditDistance (char *str1, char *str2)
 {
