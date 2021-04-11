@@ -20,7 +20,7 @@ min (int a, int b, int c)
   return result;
 }
 
-char *
+int
 EditDistance (char *str1, char *str2)
 {
   if (strlen (str1) == 0)
