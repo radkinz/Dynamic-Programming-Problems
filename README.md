@@ -1,2 +1,2 @@
-# Edit-Distance
-Some fun solutions to finding the minimum number of edits between two strings
+# Dynamic Programming Problems
+Just some fun solutions to classic dynamic programming questions. All questions are solved initially using the recursive method and then the DP method to eliminate overlapping subproblems.
