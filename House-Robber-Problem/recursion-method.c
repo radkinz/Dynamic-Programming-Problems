@@ -24,7 +24,7 @@ MaxProfit (int houses[])
     {
     return max (houses[0], houses[1]);}
 
-return max(houses[0] + MaxFlowers (&houses[2]), MaxFlowers (&houses[1]));}
+return max(houses[0] + MaxProfit (&houses[2]), MaxProfit (&houses[1]));}
 
 int
 main ()
