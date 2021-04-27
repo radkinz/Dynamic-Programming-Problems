@@ -13,26 +13,28 @@ max (int a, int b)
 }
 
 int
-MaxProfit (int houses[])
+MaxProfit (int houses[], int len)
 {
   //base case
-  int len = sizeof(houses)/sizeof(houses[0]);
   if (len == 1)
     {
-    return houses[0];}
+      return houses[0];
+    }
   if (len == 2)
     {
-    return max (houses[0], houses[1]);}
+      return max (houses[0], houses[1]);
+    }
 
-return max(houses[0] + MaxProfit (&houses[2]), MaxProfit (&houses[1]));}
+  return max (houses[0] + MaxProfit (&houses[2], len-2), MaxProfit (&houses[1], len-1));
+}
 
 int
 main ()
 {
 
-  int houses[5] = { 4, 3, 1, 3, 5 };
-  printf ("%d", MaxProfit(houses));
+  int houses[] = { 4, 3, 1, 3, 5 };
+  int len = sizeof (houses) / sizeof (houses[0]);
+  printf ("%d", MaxProfit(houses, len));
 
   return 0;
 }
-
